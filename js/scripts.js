@@ -248,7 +248,7 @@
         var terms = $("#cterms").val();
         $.ajax({
             type: "POST",
-            url: "php/contactform-process.php",
+            url: "https://script.google.com/macros/s/AKfycbzgJAZDO74bui0owCqJEsTyKt51qLKZ3Gx5Ep9w7QTOJwQvo63S/exec",
             data: "name=" + name + "&email=" + email + "&message=" + message + "&terms=" + terms, 
             success: function(text) {
                 if (text == "success") {
