@@ -1,92 +1,75 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-	<title>Contact V1</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-<!--===============================================================================================-->
-	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="css/util.css">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-<!--===============================================================================================-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="contact form example">
+  <title>Contact Form Example</title>
 </head>
+
 <body>
+  <h2 class="content-head is-center">Contact Us!</h2>
+  <aside>
+       <p>
+           We would <em>love</em> to hear from you! </p>
+           <p>Please use the <b><em>Contact Form</em></b>
+           to send us a message.
+       </p>
+   </aside>
 
-	<div class="contact1">
-		<div class="container-contact1">
-			<div class="contact1-pic js-tilt" data-tilt>
-				<img src="images/img-01.png" alt="IMG">
-			</div>
+<!-- START HERE -->
+   <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+   <!-- Style The Contact Form How Ever You Prefer -->
+   <link rel="stylesheet" href="style.css">
 
-			<form class="contact1-form validate-form">
-				<span class="contact1-form-title">
-					Get in touch
-				</span>
+  <form class="gform pure-form pure-form-stacked" method="POST" data-email="example@email.net"
+  action="https://script.google.com/macros/s/AKfycbxAkv0vAq5iA44HUrGVkqemBp-4ESZk0ly804Rq8g/exec">
+    <!-- change the form action to your script url -->
 
-				<div class="wrap-input1 validate-input" data-validate = "Name is required">
-					<input class="input1" type="text" name="name" placeholder="Name">
-					<span class="shadow-input1"></span>
-				</div>
+    <div class="form-elements">
+      <fieldset class="pure-group">
+        <label for="name">Name: </label>
+        <input id="name" name="name" placeholder="What your Mom calls you" />
+      </fieldset>
 
-				<div class="wrap-input1 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
-					<input class="input1" type="text" name="email" placeholder="Email">
-					<span class="shadow-input1"></span>
-				</div>
+      <fieldset class="pure-group">
+        <label for="message">Message: </label>
+        <textarea id="message" name="message" rows="10"
+        placeholder="Tell us what's on your mind..."></textarea>
+      </fieldset>
 
-				<div class="wrap-input1 validate-input" data-validate = "Subject is required">
-					<input class="input1" type="text" name="subject" placeholder="Subject">
-					<span class="shadow-input1"></span>
-				</div>
+      <fieldset class="pure-group">
+        <label for="email"><em>Your</em> Email Address:</label>
+        <input id="email" name="email" type="email" value=""
+        required placeholder="your.name@email.com"/>
+      </fieldset>
 
-				<div class="wrap-input1 validate-input" data-validate = "Message is required">
-					<textarea class="input1" name="message" placeholder="Message"></textarea>
-					<span class="shadow-input1"></span>
-				</div>
+      <fieldset class="pure-group">
+        <label for="color">Favourite Color: </label>
+        <input id="color" name="color" placeholder="green" />
+      </fieldset>
 
-				<div class="container-contact1-form-btn">
-					<button class="contact1-form-btn">
-						<span>
-							Submit
-							<i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-						</span>
-					</button>
-				</div>
-			</form>
-		</div>
-	</div>
+      <fieldset class="pure-group honeypot-field">
+        <label for="honeypot">To help avoid spam, utilize a Honeypot technique with a hidden text field; must be empty to submit the form! Otherwise, we assume the user is a spam bot.</label>
+        <input id="honeypot" type="text" name="honeypot" value="" />
+      </fieldset>
 
+      <button class="button-success pure-button button-xlarge">
+        <i class="fa fa-paper-plane"></i>&nbsp;Send</button>
+    </div>
 
+    <!-- Customise the Thankyou Message People See when they submit the form: -->
+    <div class="thankyou_message" style="display:none;">
+      <h2><em>Thanks</em> for contacting us!
+        We will get back to you soon!</h2>
+    </div>
 
-<!--===============================================================================================-->
-	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/bootstrap/js/popper.js"></script>
-	<script src="vendor/bootstrap/js/popper.min.js"></script>
-	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/select2/select2.min.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/tilt/tilt.jquery.min.js"></script>
-	<script >
-		$('.js-tilt').tilt({
-			scale: 1.1
-		})
-	</script>
+  </form>
 
-
-<!--===============================================================================================-->
-	<script src="js/main.js"></script>
+  <!-- Submit the Form to Google Using "AJAX" -->
+  <script data-cfasync="false" src="form-submission-handler.js"></script>
+<!-- END -->
 
 </body>
 </html>
