@@ -149,7 +149,7 @@ strong {
 }
 
 .section-title {
-	color: #0d1e3a;
+	color: #14bf98;
 	font: 500 0.8125rem/1.125rem "Montserrat", sans-serif;
 }
 
@@ -265,6 +265,10 @@ strong {
 	font: 400 0.875rem/1.375rem "Open Sans", sans-serif;
 	cursor: text;
 	transition: all 0.2s ease;
+}
+
+.honeypot-field {
+    display: none;
 }
 
 /* IE10+ hack to solve lower label text position compared to the rest of the browsers */
@@ -951,7 +955,7 @@ input[type='checkbox'] {
 }
 
 .cards-2 .list-unstyled .fas {
-	color: #0d1e3a;
+	color: #14bf98;
 	font-size: 0.5rem;
 	line-height: 1.375rem;
 }
@@ -1161,7 +1165,7 @@ input[type='checkbox'] {
 }
 
 .tabs #tab-3 .list-unstyled .fas {
-	color: #0d1e3a;
+	color: #14bf98;
 	font-size: 0.5rem;
 	line-height: 1.375rem;
 }
@@ -1274,7 +1278,7 @@ input[type='checkbox'] {
 }
 
 .form-1 .list-unstyled .fas {
-	color: #0d1e3a;
+	color: #14bf98;
 	font-size: 0.5rem;
 	line-height: 1.375rem;
 }
@@ -1610,7 +1614,7 @@ input[type='checkbox'] {
 }
 
 .counter .list-unstyled .fas {
-	color: #0d1e3a;
+	color: #14bf98;
 	font-size: 0.5rem;
 	line-height: 1.375rem;
 }
@@ -1832,7 +1836,7 @@ a:hover.back-to-top {
 }
 
 .ex-basic-2 .list-unstyled .fas {
-	color: #0d1e3a;
+	color: #14bf98;
 	font-size: 0.5rem;
 	line-height: 1.375rem;
 }
