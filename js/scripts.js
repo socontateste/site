@@ -192,7 +192,7 @@
         
         $.ajax({
             type: "POST",
-            url: "https://script.google.com/macros/s/AKfycbzgJAZDO74bui0owCqJEsTyKt51qLKZ3Gx5Ep9w7QTOJwQvo63S/exec",
+            url: "php/callmeform-process.php",
             data: "name=" + name + "&phone=" + phone + "&email=" + email + "&select=" + select + "&terms=" + terms, 
             success: function(text) {
                 if (text == "success") {
@@ -248,7 +248,7 @@
         var terms = $("#cterms").val();
         $.ajax({
             type: "POST",
-            url: "https://script.google.com/macros/s/AKfycbzgJAZDO74bui0owCqJEsTyKt51qLKZ3Gx5Ep9w7QTOJwQvo63S/exec",
+            url: "php/contactform-process.php",
             data: "name=" + name + "&email=" + email + "&message=" + message + "&terms=" + terms, 
             success: function(text) {
                 if (text == "success") {
@@ -306,7 +306,7 @@
         
         $.ajax({
             type: "POST",
-            url: "https://script.google.com/macros/s/AKfycbzgJAZDO74bui0owCqJEsTyKt51qLKZ3Gx5Ep9w7QTOJwQvo63S/exec",
+            url: "php/privacyform-process.php",
             data: "name=" + name + "&email=" + email + "&select=" + select + "&terms=" + terms, 
             success: function(text) {
                 if (text == "success") {
