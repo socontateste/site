@@ -192,7 +192,7 @@
         
         $.ajax({
             type: "POST",
-            url: "php/callmeform-process.php",
+            url: "https://script.google.com/macros/s/AKfycbxAkv0vAq5iA44HUrGVkqemBp-4ESZk0ly804Rq8g/exec",
             data: "name=" + name + "&phone=" + phone + "&email=" + email + "&select=" + select + "&terms=" + terms, 
             success: function(text) {
                 if (text == "success") {
@@ -248,7 +248,7 @@
         var terms = $("#cterms").val();
         $.ajax({
             type: "POST",
-            url: "php/contactform-process.php",
+            url: "js/form-submission-handler.js",
             data: "name=" + name + "&email=" + email + "&message=" + message + "&terms=" + terms, 
             success: function(text) {
                 if (text == "success") {
